@@ -273,6 +273,50 @@ header {
   }
 }
 
+
+/* Skill Section */
+.my-skills{
+  background-color: var(--clr-dark);
+}
+
+.section_title-skills, .my-skills > p{
+  color: var(--clr-light);
+}
+
+.skills_list{
+  list-style: none;
+  color: var(--clr-light);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.skills_list > li::before{
+  content: "\2022";
+  color: var(--clr-accent);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-weight: bold;
+}
+
+.section_title-skills::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1px;
+  margin-bottom: .25em;
+  margin-right: .25em;
+  background: var(--clr-light);
+  opacity: 0.25;
+}
+
+.skills_comingSoon::after{
+  content: " coming soon";
+  font-style: italic;
+  font-size: .75em;
+  color: var(--clr-accent);
+}
+
 /*  My services section  */
 
 .my-services {
