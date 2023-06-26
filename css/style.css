@@ -65,6 +65,15 @@ strong { font-weight: var(--fw-bold) }
   outline: 3px solid var(--clr-accent);
 }
 
+i{
+  color: var(--clr-accent);
+}
+
+.dark{
+  background-color: var(--clr-dark);
+  color: var(--clr-light)
+}
+
 .btn {
   display: inline-block;
   padding: .5em 2.5em;
@@ -120,6 +129,7 @@ h3 { font-size: var(--fs-h3) }
   padding: .25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
+  border-radius: 5px;
 }
 
 /* header */
@@ -213,7 +223,7 @@ header {
   width: 2em;
   height: 3px;
   border-radius: 1em;
-  transition: transform 250ms ease-in-out;
+  transition: transform .4s ease-in-out;
 }
 
 
@@ -299,6 +309,10 @@ header {
   font-weight: bold;
 }
 
+.section_title-skills {
+  color: var(--clr-accent)
+}
+
 .section_title-skills::before {
   content: '';
   display: inline-block;
@@ -310,10 +324,15 @@ header {
   opacity: 0.25;
 }
 
+.skills_comingSoon {
+  font-style: italic;
+}
+
 .skills_comingSoon::after{
   content: " coming soon";
   font-style: italic;
   font-size: .75em;
+  margin-left: .25em;
   color: var(--clr-accent);
 }
 
@@ -505,6 +524,14 @@ header {
 
 .portfolio-item-individual p {
   max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio_detail-img {
+  border: 3px solid var(--clr-accent);
+  border-radius: 5px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
 }
