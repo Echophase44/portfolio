@@ -165,6 +165,15 @@ header {
   padding: 0;
 }
 
+.nav_item::before {
+  content: '';
+  display: inline-block;
+  width: 2em;
+  height: 2px;
+  background: var(--clr-light);
+  opacity: 0.75;
+}
+
 .nav_link {
   color: inherit;
   font-weight: var(--fw-bold);
@@ -616,6 +625,14 @@ header {
   opacity: 0.75;
 }
 
+.portfolio_detail-video{
+  border-radius: 5px;
+  max-height: 400px;
+  margin-left: 5em;
+  margin-bottom: 1em;
+  box-shadow: var(--bs);
+}
+
 @media (max-width: 600px) {
   .portfolio_tools{
     flex-direction: column;
@@ -630,5 +647,18 @@ header {
 
   .portfolio_intro{
     margin-top: -8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portfolio-item-individual{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portfolio_detail-video{
+    margin-left: 0;
   }
 }
