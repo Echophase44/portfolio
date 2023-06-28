@@ -14,3 +14,4 @@
 
 - An archive section to move older projects to.
 - Downloadable resume.
+- Add a description of projects on hover.
