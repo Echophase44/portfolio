@@ -1,6 +1,7 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav_link");
 const logo = document.querySelector(".logo_img");
+const logoDiv = document.querySelector(".logo");
 const subtitle = document.querySelector(".section_subtitle-intro");
 const subtitleEgg = document.querySelector(".subtitle_egg");
 
@@ -29,8 +30,22 @@ navLinks.forEach((link) => {
   });
 });
 
+function factSelection() {
+  console.log("You were a cop? getCopStats()");
+}
+
 // Egg
-logo.addEventListener("click", () => {
+logoDiv.addEventListener("click", () => {
   logo.src = "img/logos/consolelogo.png";
-  console.log("You found the Logo Egg!");
+  console.log("You found the Logo Easter Egg!");
+  console.log(
+    `Your reward: 
+      Some facts from my 17lands.com Magic: The Gathering - 
+      Premier Draft - stats:
+
+      APPARENTLY - Azorius is my best, with a 58% win rate.
+      Followed by Gruul with a 55% win rate.
+      
+      `
+  );
 });
