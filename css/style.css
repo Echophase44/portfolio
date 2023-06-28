@@ -661,4 +661,13 @@ header {
   .portfolio_detail-video{
     margin-left: 0;
   }
+
+  .about-me_img {
+    display: none;
+  }
+
+  .detail-img_height{
+    width: 500px;
+    height: auto
+  }
 }
